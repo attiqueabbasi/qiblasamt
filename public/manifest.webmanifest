@@ -1,0 +1,41 @@
+{
+  "name": "قبلة سمت - أداة تحديد اتجاه القبلة",
+  "short_name": "قبلة سمت",
+  "description": "أداة مجانية لتحديد اتجاه القبلة نحو الكعبة المشرفة بدقة من أي مكان في العالم.",
+  "start_url": "/",
+  "id": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0F5C4A",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": ["lifestyle", "utilities", "religion"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

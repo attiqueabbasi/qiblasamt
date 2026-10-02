@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #ffffff;
+  --color-surface: #eef6f1;
+  --color-border: #dfece5;
+  --color-primary: #0f5c4a;
+  --color-primary-hover: #0a4538;
+  --color-accent: #c8a24a;
+  --color-text: #1c2b27;
+  --color-text-secondary: #5b6b66;
+  --color-success: #2e9e6b;
+  --color-warning: #b7791f;
+}
+
+:root.dark {
+  --color-bg: #0b1512;
+  --color-surface: #11201c;
+  --color-border: #1e332c;
+  --color-primary: #2e9e6b;
+  --color-primary-hover: #37b87c;
+  --color-accent: #d8b562;
+  --color-text: #eaf3ef;
+  --color-text-secondary: #9fb3ac;
+  --color-success: #34c48a;
+  --color-warning: #d89a3c;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/*
+ * Hero background layer. To swap in a photo or video later:
+ * - image: set `background-image` here (or drop an <img> into .hero-bg
+ *   before the pattern/content) and raise .hero-scrim's opacity for contrast.
+ * - video: add a <video> as the first child of .hero-bg, absolutely
+ *   positioned and covering the section, then raise .hero-scrim's opacity.
+ */
+.hero-bg {
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-scrim {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
